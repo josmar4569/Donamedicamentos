@@ -1,6 +1,12 @@
 from flask import Flask
+from flas_mysqldb import MySQL
 
 app = Flask(__name__)
+# app.config['MYSQL_HOST'] = 'localhost'
+# app.config['MYSQL_USER'] = 'jesus'
+# app.config['MYSQL_PASSWORD'] = '2609'
+# app.config['MYSQL_DB'] = ''
+# Mysql = MySQL()
 
 @app.route('/')
 def Index():
