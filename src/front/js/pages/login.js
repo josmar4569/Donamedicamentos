@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "../../styles/home.css";
 
+
 export const Login = () => {
   return (
-    <div className="container row d-flex justify-content-center">
+    <div className="container row ">
       <div className="card col-4">
         <div className="card-body">
           <h5 className="card-title"> Email </h5>
@@ -24,9 +25,9 @@ export const Login = () => {
             aria-label="Recipient's username"
             aria-describedby="basic-addon2"
           ></input>
-          <a href="#" className="btn btn-primary">
+          <a href="/" className="btn btn-primary">
             {" "}
-            Registrarse{" "}
+            Registrarse
           </a>
         </div>
         <p>
