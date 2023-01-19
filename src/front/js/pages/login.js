@@ -3,40 +3,37 @@ import "../../styles/home.css";
 
 export const Login = () => {
   return (
-    <div className="container">
-      <div className="card">
+    <div className="container row d-flex justify-content-center">
+      <div className="card col-4">
         <div className="card-body">
-          <h5 className="card-title"> Gmail </h5>
+          <h5 className="card-title"> Email </h5>
           <div class="input-group mb-3">
             <input
               type="text"
               className="form-control"
-              placeholder="Correo electronico"
+              placeholder=""
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
             />
-            <span className="input-group-text" id="basic-addon2">
-              @gmail.com
-            </span>
           </div>
           <h5 class="card-title"> Password </h5>
           <input
             type="text"
             class="form-control"
-            placeholder="Ingrese la contraseña"
+            placeholder=""
             aria-label="Recipient's username"
             aria-describedby="basic-addon2"
           ></input>
-          <a href="#" class="btn btn-primary">
+          <a href="#" className="btn btn-primary">
             {" "}
             Registrarse{" "}
           </a>
         </div>
+        <p>
+          {" "}
+          Si no tienes una cuenta, <a href="/misionVision"> Registrate. </a>
+        </p>
       </div>
-      <p>
-        {" "}
-        Si no tienes una cuenta, <a href=""> Registrate. </a>
-      </p>
     </div>
   );
 };
