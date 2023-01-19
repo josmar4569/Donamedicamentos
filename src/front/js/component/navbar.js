@@ -3,41 +3,57 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <nav className="navbar navbar-light bg-light">
-      <div className="container">
-        <Link to="/">
-          <span className="navbar-brand mb-0 h1">INICIO</span>
-        </Link>
-        <Link to="/login">
-          <span className="navbar-brand mb-0 h1">login</span>
-        </Link>
-        <Link to="/quienesSomos">
-          <span className="navbar-brand mb-0 h1">Quienes somos</span>
-        </Link>
-        <Link to="/politicas">
-          <span className="navbar-brand mb-0 h1">Politicas</span>
-        </Link>
-        <Link to="/catalogo">
-          <span className="navbar-brand mb-0 h1">Catalogo</span>
-        </Link>
-        <Link to="/donaciones">
-          <span className="navbar-brand mb-0 h1">Donaciones</span>
-        </Link>
-        <Link to="/patrocinantes">
-          <span className="navbar-brand mb-0 h1">Patrocinantes</span>
-        </Link>
-        <Link to="/misionVision">
-          <span className="navbar-brand mb-0 h1">Mision y Vision</span>
-        </Link>
-        <Link to="/contacto">
-          <span className="navbar-brand mb-0 h1">Contacto</span>
-        </Link>
-        <div className="ml-auto">
-          <Link to="/demo">
-            <button className="btn btn-primary">Ingresar</button>
-          </Link>
+    <div className="container d-flex justify-content-beetwen">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <a className="navbar-brand">LIFE FOR ALL</a>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="/">
+                  HOME
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/contacto">
+                  CONTACT
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/catalogo">
+                  CATALOGUE
+                </a>
+              </li>
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  LOGIN
+                </a>
+                <ul className="dropdown-menu">
+                  <li>
+                    <a className="dropdown-item" href="/login">
+                      LOGIN
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="/misionVision">
+                      REGISTER
+                    </a>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider"></hr>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
