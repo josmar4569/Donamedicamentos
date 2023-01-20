@@ -1,27 +1,35 @@
 import React, { Component } from "react";
 import "../../styles/home.css";
 
+/*const email = "manriquejosmar3@gmail.com";
+const password = "12345678";
 
-export const Login = () => {
+const ingreso = () => {
+  if (email == "manriquejosmar3@gmail.com" && password == "12345678") {
+    Login();
+  }*/
+  export const Login = () => {
   return (
     <div className="container row ">
       <div className="card col-4">
         <div className="card-body">
-          <h5 className="card-title"> Email </h5>
+          <h5 className="card-title h5"> Email </h5>
           <div class="input-group mb-3">
             <input
+              id="email"
               type="text"
               className="form-control"
-              placeholder=""
+              placeholder="enter your email"
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
             />
           </div>
-          <h5 class="card-title"> Password </h5>
+          <h5 class="card-title h5"> Password </h5>
           <input
+            id="password"
             type="text"
             class="form-control"
-            placeholder=""
+            placeholder="Enter your password"
             aria-label="Recipient's username"
             aria-describedby="basic-addon2"
           ></input>
@@ -32,7 +40,7 @@ export const Login = () => {
         </div>
         <p>
           {" "}
-          Si no tienes una cuenta, <a href="/misionVision"> Registrate. </a>
+          Si no tienes una cuenta, <a href="/quienesSomos"> Registrate. </a>
         </p>
       </div>
     </div>

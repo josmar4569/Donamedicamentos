@@ -41,7 +41,7 @@ export const Navbar = () => {
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/misionVision">
+                    <a className="dropdown-item" href="/quienesSomos">
                       REGISTER
                     </a>
                   </li>
