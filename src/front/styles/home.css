@@ -5,4 +5,11 @@
     one more css for each page that will contain the selected used 
     on that page only (the ones not reused in other pages).
 */
-
+.row {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 40px;
+}
+.slide {
+}

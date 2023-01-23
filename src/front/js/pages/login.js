@@ -40,7 +40,7 @@ const ingreso = () => {
         </div>
         <p>
           {" "}
-          Si no tienes una cuenta, <a href="/quienesSomos"> Registrate. </a>
+          Si no tienes una cuenta, <a href="/"> Registrate. </a>
         </p>
       </div>
     </div>
